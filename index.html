@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aaron Emmanuel | Robotics & Embedded Systems Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Aaron Emmanuel, a Robotics & Embedded Systems Engineer building autonomous systems, intelligent hardware, and modern engineering solutions."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f5f6fa;
+      --bg-alt: #ffffff;
+      --text: #111827;
+      --text-muted: #6b7280;
+      --accent: #2563eb;
+      --accent-soft: rgba(37, 99, 235, 0.08);
+      --border-subtle: #e5e7eb;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --nav-height: 64px;
+      /* wider layout, good on laptops/desktops */
+      --max-width: 1240px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #eef2ff 0, #f9fafb 40%, #f3f4f6 100%);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout wrappers */
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header / Nav */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(249, 250, 251, 0.8);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+    }
+
+    .nav {
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.45);
+      position: relative;
+    }
+
+    .nav-logo::after {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border-radius: inherit;
+      border: 1px solid rgba(248, 250, 252, 0.85);
+    }
+
+    .nav-title {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      font-size: 0.95rem;
+    }
+
+    .nav-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.18s ease-out;
+      border-radius: 999px;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, 0.35);
+      background: linear-gradient(
+        135deg,
+        rgba(37, 99, 235, 0.12),
+        rgba(37, 99, 235, 0.02)
+      );
+      font-size: 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-cta span.chevron {
+      font-size: 1rem;
+      transform: translateY(1px);
+    }
+
+    /* Hero */
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      padding: 3rem 0 2.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.04);
+      color: #4b5563;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.18);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 3vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(120deg, #2563eb, #4f46e5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-list-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-bullets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-bullets li {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .hero-bullets span.bullet {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      margin-top: 2px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-primary {
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      background: radial-gradient(circle at 10% 0, #60a5fa, #2563eb);
+      border: none;
+      color: white;
+      font-weight: 500;
+      font-size: 0.95rem;
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.45);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(37, 99, 235, 0.55);
+    }
+
+    .btn-secondary {
+      padding: 0.7rem 1.25rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      cursor: pointer;
+    }
+
+    .btn-secondary span.icon {
+      font-size: 1.1rem;
+    }
+
+    .hero-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    /* Right hero: collage */
+
+    .hero-visual {
+      position: relative;
+      height: 100%;
+    }
+
+    .hero-card-main {
+      background: var(--bg-alt);
+      border-radius: var(--radius-xl);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-main::before {
+      /* subtle technical grid overlay */
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(
+          rgba(148, 163, 184, 0.12) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(148, 163, 184, 0.12) 1px,
+          transparent 1px
+        );
+      background-size: 30px 30px;
+      opacity: 0.35;
+      mix-blend-mode: soft-light;
+      pointer-events: none;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .hero-card-badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #1d4ed8;
+    }
+
+    .hero-card-graph {
+      position: relative;
+      z-index: 1;
+      margin: 0.25rem 0 1.2rem;
+      height: 120px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #eff6ff, #e5e7eb);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 0.75rem;
+      gap: 4px;
+    }
+
+    .hero-card-graph div.bar {
+      flex: 1;
+      border-radius: 999px 999px 0 0;
+      background: linear-gradient(180deg, #2563eb, #1d4ed8);
+      opacity: 0.85;
+    }
+
+    .hero-card-graph div.bar:nth-child(2) {
+      height: 55%;
+      opacity: 0.68;
+    }
+
+    .hero-card-graph div.bar:nth-child(3) {
+      height: 90%;
+    }
+
+    .hero-card-graph div.bar:nth-child(4) {
+      height: 70%;
+      opacity: 0.8;
+    }
+
+    .hero-card-graph div.bar:nth-child(5) {
+      height: 42%;
+      opacity: 0.6;
+    }
+
+    .hero-card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #6b7280;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-float-card {
+      position: absolute;
+      right: -12px;
+      bottom: -18px;
+      width: 210px;
+      background: #0f172a;
+      color: #e5e7eb;
+      border-radius: 22px;
+      padding: 0.85rem 1rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    .hero-float-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ca3af;
+      margin-bottom: 0.25rem;
+    }
+
+    .hero-float-value {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-float-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-top: 0.35rem;
+    }
+
+    .hero-float-tag {
+      padding: 0.08rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      font-size: 0.65rem;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 2.5rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 26rem;
+    }
+
+    /* Featured projects */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .project-card {
+      background: var(--bg-alt);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 1rem;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        circle at top left,
+        rgba(37, 99, 235, 0.12),
+        transparent 60%
+      );
+      opacity: 0;
+      transition: opacity 0.17s ease-out;
+    }
+
+    .project-card:hover::before {
+      opacity: 1;
+    }
+
+    .project-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .project-tag {
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      font-size: 0.72rem;
+      color: #4b5563;
+    }
+
+    .project-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .project-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .project-meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.25rem;
+    }
+
+    .project-meta-pill {
+      font-size: 0.72rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.02);
+      color: #6b7280;
+    }
+
+    .project-link {
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      color: #2563eb;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    /* Tech stack section */
+
+    .stack-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .stack-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(148, 163, 184, 0.7);
+      padding: 1rem 1.1rem;
+    }
+
+    .stack-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .stack-items {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* About section */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    .about-text-main {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-bottom: 0.9rem;
+    }
+
+    .about-text-secondary {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .about-box {
+      background: var(--bg-alt);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      padding: 1.15rem 1.25rem;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .about-box-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.35rem;
+    }
+
+    .about-badge {
+      font-size: 0.75rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      color: #4b5563;
+    }
+
+    /* Contact section */
+
+    .contact-card {
+      background: #0f172a;
+      border-radius: var(--radius-xl);
+      padding: 1.5rem 1.75rem;
+      color: #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.25rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+    }
+
+    .contact-text {
+      max-width: 26rem;
+    }
+
+    .contact-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-subtitle {
+      font-size: 0.88rem;
+      color: #9ca3af;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .contact-chip {
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      font-size: 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+    }
+
+    .contact-chip span.icon {
+      font-size: 1rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 1.8rem 0 2.2rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 880px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-visual {
+        order: -1;
+      }
+
+      .hero {
+        padding-top: 2.2rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-bottom: 2rem;
+      }
+
+      section {
+        padding: 2rem 0;
+      }
+
+      .contact-card {
+        padding: 1.2rem 1.25rem;
+      }
+    }
+
+    /* use a bit more space on huge screens */
+    @media (min-width: 1600px) {
+      :root {
+        --max-width: 1360px;
+      }
+    }
+
+    /* tighter padding on very small phones */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Header / Nav -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-left">
+            <div class="nav-logo"></div>
+            <div>
+              <div class="nav-title">Aaron Emmanuel</div>
+              <div class="nav-subtitle">Robotics & Embedded Systems</div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#stack">Tech Stack</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#projects" class="nav-cta">
+              View Portfolio
+              <span class="chevron">↗</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left -->
+            <div>
+              <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Open to robotics & embedded opportunities
+              </div>
+              <h1 class="hero-title">
+                Building <span class="highlight">intelligent hardware</span><br />
+                and autonomous systems.
+              </h1>
+              <p class="hero-subtitle">
+                I’m a Robotics & Embedded Systems Engineer designing and building
+                autonomous robots, sensor-driven devices, and modern engineering
+                solutions that bridge sensing, control, and embedded software.
+              </p>
+
+              <div class="hero-list-label">I design & build</div>
+              <ul class="hero-bullets">
+                <li>
+                  <span class="bullet">●</span>
+                  <span>Self-balancing robots and autonomous mobile platforms.</span>
+                </li>
+                <li>
+                  <span class="bullet">●</span>
+                  <span>
+                    Embedded systems with Teensy, ESP32 & Raspberry Pi, from
+                    schematics to firmware.
+                  </span>
+                </li>
+                <li>
+                  <span class="bullet">●</span>
+                  <span>
+                    Sensor fusion & control algorithms (EKF, PID, CAN-based motor
+                    control).
+                  </span>
+                </li>
+                <li>
+                  <span class="bullet">●</span>
+                  <span>
+                    Real-world prototypes for robotics, automation, and engineering
+                    applications.
+                  </span>
+                </li>
+              </ul>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn-primary">
+                  View my projects
+                  <span>→</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <span class="icon">✉</span>
+                  Get in touch
+                </a>
+              </div>
+              <div class="hero-meta">
+                Robotics · Embedded Systems · Control · Sensor Fusion · Nuclear &
+                engineering experience
+              </div>
+            </div>
+
+            <!-- Right visual -->
+            <div class="hero-visual">
+              <div class="hero-card-main">
+                <div class="hero-card-header">
+                  <div>
+                    <div class="hero-card-title">
+                      Prototype Systems Dashboard
+                    </div>
+                    <div style="font-size: 0.75rem; color: #6b7280;">
+                      Live metrics from robotics & embedded projects
+                    </div>
+                  </div>
+                  <div class="hero-card-badge">Real-time</div>
+                </div>
+                <div class="hero-card-graph">
+                  <div class="bar" style="height: 65%;"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <div class="hero-card-meta">
+                  <div>
+                    <strong>4</strong> active systems
+                  </div>
+                  <div>Robotics · RVM · Wearables · Sensing</div>
+                </div>
+              </div>
+
+              <div class="hero-float-card">
+                <div class="hero-float-label">Focus Areas</div>
+                <div class="hero-float-value">
+                  Robotics, Embedded Systems & Intelligent Control
+                </div>
+                <div style="font-size: 0.78rem; color: #9ca3af;">
+                  End-to-end design from hardware to software.
+                </div>
+                <div class="hero-float-tags">
+                  <span class="hero-float-tag">Self-balancing robots</span>
+                  <span class="hero-float-tag">TinyML wearables</span>
+                  <span class="hero-float-tag">Sensor fusion</span>
+                  <span class="hero-float-tag">Automation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section id="projects">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Featured projects</h2>
+              <p class="section-subtitle">
+                A selection of robotics, embedded systems, and engineering builds
+                that showcase how I design, implement, and integrate complete
+                systems.
+              </p>
+            </div>
+            <div style="font-size: 0.85rem; color: #6b7280;">
+              Deeper case studies coming soon.
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Robotics · Control</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">Capstone</span>
+              </div>
+              <h3 class="project-title">Dual Self-Balancing Robot System</h3>
+              <p class="project-desc">
+                Two-wheel balancing robots using Teensy 4.1, ODrive CAN motor
+                drivers, and sensor fusion control loops to achieve fast,
+                stable balance and dynamic motion.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">Teensy 4.1</span>
+                <span class="project-meta-pill">ODrive CAN</span>
+                <span class="project-meta-pill">IMU sensor fusion</span>
+                <span class="project-meta-pill">Closed-loop control</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Embedded · Automation</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">Prototype</span>
+              </div>
+              <h3 class="project-title">Reverse Vending Machine (RVM)</h3>
+              <p class="project-desc">
+                A fully integrated system that identifies, sorts, and stores
+                reusable containers using sensors, vision, servos, and automated
+                mechanisms.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">Raspberry Pi</span>
+                <span class="project-meta-pill">Ultrasonic & optical sensing</span>
+                <span class="project-meta-pill">Python control logic</span>
+                <span class="project-meta-pill">Actuator control</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Wearable · TinyML</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">In progress</span>
+              </div>
+              <h3 class="project-title">ASL Smart Glove (ESP32 TinyML)</h3>
+              <p class="project-desc">
+                A wearable glove that uses flex sensors and IMU data with
+                on-device TinyML to classify and recognize ASL hand gestures in
+                real time.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">ESP32-S3</span>
+                <span class="project-meta-pill">TinyML</span>
+                <span class="project-meta-pill">Flex & IMU sensors</span>
+                <span class="project-meta-pill">Bluetooth</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Sensing · Hardware</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">Hardware</span>
+              </div>
+              <h3 class="project-title">EEG Signal Conditioning Board</h3>
+              <p class="project-desc">
+                Custom board for biomedical signal acquisition using an
+                instrumentation amplifier and environmental sensing for robust,
+                low-noise measurements.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">AD620</span>
+                <span class="project-meta-pill">Analog filtering</span>
+                <span class="project-meta-pill">PCB design</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Mobile Robotics · Vision</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">Course</span>
+              </div>
+              <h3 class="project-title">
+                TurtleBot3 Lane Following & Cone Avoidance
+              </h3>
+              <p class="project-desc">
+                ROS-based mobile robot implementing HSV-based lane detection,
+                cone detection, and simple avoidance behaviors while maintaining
+                lane tracking.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">ROS</span>
+                <span class="project-meta-pill">OpenCV</span>
+                <span class="project-meta-pill">Mobile robotics</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+              <div class="project-label-row">
+                <span class="project-tag">Control · Simulation</span>
+                <span style="font-size: 0.75rem; color: #9ca3af;">MATLAB</span>
+              </div>
+              <h3 class="project-title">
+                Extended Kalman Filter for Autonomous Drill
+              </h3>
+              <p class="project-desc">
+                EKF-based state estimation for an autonomous blasthole drill
+                model, integrating sensor noise, dynamics, and control for robust
+                simulation.
+              </p>
+              <div class="project-meta-list">
+                <span class="project-meta-pill">MATLAB/Simulink</span>
+                <span class="project-meta-pill">EKF</span>
+                <span class="project-meta-pill">State estimation</span>
+              </div>
+              <a class="project-link" href="#">
+                View project
+                <span>↗</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section id="stack">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">What I work with</h2>
+              <p class="section-subtitle">
+                Tools and technologies I use across robotics, embedded systems,
+                control, and software.
+              </p>
+            </div>
+          </div>
+
+          <div class="stack-columns">
+            <div class="stack-card">
+              <div class="stack-title">Robotics & Control</div>
+              <div class="stack-items">
+                ROS / ROS2, mobile robots, self-balancing platforms, motion
+                control, PID tuning, Extended Kalman Filters, closed-loop
+                systems, ODrive CAN motor control.
+              </div>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-title">Embedded Systems</div>
+              <div class="stack-items">
+                Teensy, ESP32-S3, Raspberry Pi, I2C / SPI / UART, USB devices,
+                GPIO, real-time firmware, servo & motor control, sensor
+                interfacing, basic PCB design.
+              </div>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-title">Software & ML</div>
+              <div class="stack-items">
+                Python, C/C++, TinyML, OpenCV, classification models, MATLAB /
+                Simulink, data processing, signal analysis, basic AI workflows.
+              </div>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-title">Engineering Tools</div>
+              <div class="stack-items">
+                SolidWorks, basic CAD for mechanical assemblies, oscilloscopes &
+                test equipment, prototyping, system integration, and
+                documentation for real-world engineering environments.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">About me</h2>
+              <p class="section-subtitle">
+                A bit more about my background, experience, and how I approach
+                engineering problems.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <div>
+              <p class="about-text-main">
+                I’m an engineer who enjoys working at the intersection of
+                hardware, software, and control theory. I design and build
+                systems that sense the world, make decisions, and act on their
+                environment.
+              </p>
+              <p class="about-text-secondary">
+                My experience spans robotics, embedded development, and
+                simulation, along with exposure to nuclear engineering and audit
+                environments. That combination has shaped how I think about
+                reliability, safety, and systems-level design. I like taking
+                ideas from early sketches to working prototypes, and I’m always
+                looking for opportunities to learn, refine, and ship better
+                systems.
+              </p>
+            </div>
+
+            <aside class="about-box">
+              <div class="about-box-title">Snapshot</div>
+              <div style="font-size: 0.86rem; color: #4b5563; margin-bottom: 0.7rem;">
+                Robotics & Embedded Systems · Autonomous platforms ·
+                sensor-driven prototypes.
+              </div>
+              <div style="font-size: 0.78rem; color: #6b7280;">
+                Areas I’m especially interested in:
+              </div>
+              <div class="about-badges">
+                <span class="about-badge">Autonomous robots</span>
+                <span class="about-badge">Self-balancing systems</span>
+                <span class="about-badge">Embedded firmware</span>
+                <span class="about-badge">Human–machine interfaces</span>
+                <span class="about-badge">Prototyping & integration</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-text">
+              <div class="contact-title">Let’s connect</div>
+              <div class="contact-subtitle">
+                If you’d like to talk about a role, collaboration, or just want
+                to swap ideas about robotics and embedded systems, feel free to
+                reach out.
+              </div>
+            </div>
+            <div class="contact-links">
+              <!-- Replace #/email with your actual links -->
+              <a href="mailto:youremail@example.com" class="contact-chip">
+                <span class="icon">✉</span>
+                Email
+              </a>
+              <a href="#" class="contact-chip">
+                <span class="icon">in</span>
+                LinkedIn
+              </a>
+              <a href="#" class="contact-chip">
+                <span class="icon">&lt;/&gt;</span>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div>© <span id="year"></span> Aaron Emmanuel. All rights reserved.</div>
+          <div class="footer-links">
+            <a href="#top">Back to top</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
