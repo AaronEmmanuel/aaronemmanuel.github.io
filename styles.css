@@ -30,24 +30,26 @@
 .media-pair figure>img,.demo-grid figure>img,.electrical-map>img{position:absolute;inset:0;width:100%;height:100%}
 
 /* Readable micro typography and smooth project media */
-.eyebrow{font-size:13px;line-height:1.4}
-.site-header,.project-row>span,.project-row small,.project-row b,.archive-next{font-size:12px;line-height:1.4}
-.case-kicker,.step-copy span{font-size:13px;line-height:1.4}
-.case-summary dt{font-size:12px;line-height:1.4}
-.hero-visual figcaption span{font-size:12px}
-.hero-robot-tag span,.hero-media-label span{font-size:11px}
-.hero-robot-tag strong,.hero-media-label strong{font-size:12px}
-.test-facts>span{font-size:12px}
-.test-facts p{font-size:12px}
-.process-media figcaption,.design-media figcaption,.demo-grid figcaption{font-size:12px;line-height:1.4}
-.electrical-notes>span,.electrical-notes b{font-size:11px}
-.power-rail,.power-context figcaption,.power-chips span{font-size:11px}
-.metrics-grid span{font-size:12px;line-height:1.5}
-.team-credit span{font-size:12px;line-height:1.4}
-.team-credit p{font-size:17px}
-.capability>span{font-size:13px;font-weight:750}
-footer>span{font-size:12px}
-.design-media figure>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.design-media figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:14px 16px;background:rgba(7,16,24,.92);color:white;font:650 12px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.eyebrow{font-size:15px;line-height:1.45}
+.site-header,.project-row>span,.project-row small,.project-row b,.archive-next{font-size:14px;line-height:1.45}
+.case-kicker,.step-copy span{font-size:15px;line-height:1.45}
+.case-summary dt{font-size:14px;line-height:1.45}
+.hero-visual figcaption span{font-size:14px}
+.hero-robot-tag span,.hero-media-label span{font-size:13px}
+.hero-robot-tag strong,.hero-media-label strong{font-size:14px}
+.test-facts>span{font-size:14px}
+.test-facts p{font-size:14px}
+.process-media figcaption,.design-media figcaption,.detail-design-media figcaption,.demo-grid figcaption{font-size:14px;line-height:1.45}
+.electrical-notes>span,.electrical-notes b{font-size:13px}
+.power-rail,.power-context figcaption,.power-chips span{font-size:13px}
+.metrics-grid span{font-size:14px;line-height:1.55}
+.team-credit span{font-size:14px;line-height:1.45}
+.team-credit p{font-size:19px}
+.capability>span{font-size:16px;font-weight:750}
+footer>span{font-size:14px}
+.design-media figure,.detail-design-media figure{background:#f7fafb}
+.design-media figure>img{object-fit:contain;background:#f7fafb;padding:10px}
+.design-media figure>video,.detail-design-media figure>video{position:absolute;inset:0 0 52px;width:100%;height:calc(100% - 52px);object-fit:contain;background:#f7fafb}
+.design-media figcaption,.detail-design-media figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;min-height:52px;display:flex;align-items:center;padding:13px 16px;background:rgba(7,16,24,.96);color:white;font:650 14px/1.45 var(--mono);letter-spacing:.08em;text-transform:uppercase}
 
-@media(max-width:700px){.eyebrow,.case-kicker,.step-copy span{font-size:12px}.brand,.header-status{font-size:11px}.team-credit p{font-size:16px}.capability>span{font-size:12px}}
+@media(max-width:700px){.eyebrow,.case-kicker,.step-copy span{font-size:14px}.brand,.header-status{font-size:12px}.team-credit p{font-size:18px}.capability>span{font-size:15px}}
