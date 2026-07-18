@@ -1,0 +1,36 @@
+import Link from "next/link";
+
+const facts = [["SPADE","46.2 lb · full mobility"],["ACE","19.4 kg · balance and latch"],["Balance","±1.5° steady-state error"],["CAN","<10 ms measured latency"]];
+
+export default function CardsPage() {
+  return (
+    <main className="case cards-case">
+      <header className="case-hero shell">
+        <div className="case-title"><Link className="back-link" href="/projects">← All projects</Link><p className="eyebrow">University capstone · 2024–2025</p><h1>Collaborative Autonomous Robot Delivery System</h1><p>Two modular self-balancing robots engineered as one collaborative delivery platform.</p></div>
+        <figure className="case-film"><video autoPlay muted loop playsInline preload="auto" poster="/cards/v2/robot-team.png" aria-label="SPADE and ACE operating together"><source src="/cards/v2/cards-robots-together.mp4" type="video/mp4" /></video><figcaption><span>SPADE</span><span>ACE</span><strong>Collaborative system in motion</strong></figcaption></figure>
+      </header>
+
+      <section className="case-overview shell"><div><p className="eyebrow">System developed</p><h2>One platform, built across the full engineering loop.</h2></div><div><p>The project combined mechanical design, custom fabrication, high and low-voltage electrical systems, embedded control, sensor feedback, and extensive physical testing.</p><div className="scope-tags"><span>Mechanical design</span><span>Electrical systems</span><span>Embedded control</span><span>Assembly</span><span>Testing</span></div></div></section>
+
+      <section className="story shell">
+        <header className="story-head"><p className="eyebrow">Project storyline</p><h2>From architecture to demonstrated motion.</h2></header>
+
+        <article className="story-step"><div className="step-number">01</div><div className="step-copy"><span>Define and down-select</span><h3>Break the delivery challenge into buildable systems.</h3><p>Mobility, vertical motion, storage, latching, control, and power were defined as connected subsystems. Early drivetrain concepts were compared for stability, efficiency, packaging, and serviceability.</p></div><div className="media-grid two"><figure className="media light"><img src="/cards/v2/drivetrain-sketch.jpg" alt="Early drivetrain concept sketch" /></figure><figure className="media dark contain"><img src="/cards/v2/drivetrain-cad.png" alt="Selected drivetrain CAD design" /></figure></div></article>
+
+        <article className="story-step"><div className="step-number">02</div><div className="step-copy"><span>Design and refine</span><h3>Iterate the drivetrain, legs, chassis, and latch.</h3><p>Gearbox geometry, motor packaging, leg structure, and service access were refined in CAD. Physical constraints drove repeated changes to printed parts, aluminum assemblies, and the modular robot architecture.</p></div><div className="media-grid two"><figure className="media dark contain"><img src="/cards/v2/gearbox-redesign.png" alt="Gearbox design revisions" /></figure><figure className="media dark contain"><img src="/cards/v2/leg-redesign.png" alt="Leg design revisions" /></figure></div></article>
+
+        <article className="story-step"><div className="step-number">03</div><div className="step-copy"><span>Fabricate and assemble</span><h3>Turn CAD into hardware that survives the bench.</h3><p>Rapid-prototyped housings, heat-set inserts, modular extrusion, and machined components supported fast iteration. Assembly exposed tolerance and access issues early enough to redesign them.</p></div><div className="media-grid two motion"><figure className="media"><video autoPlay muted loop playsInline preload="metadata" poster="/cards/v2/printing.png"><source src="/cards/v2/printing-process.mp4" type="video/mp4" /></video><figcaption>Rapid fabrication</figcaption></figure><figure className="media"><video autoPlay muted loop playsInline preload="metadata" poster="/cards/v2/gearbox-assembly.png"><source src="/cards/v2/leg-assembly.mp4" type="video/mp4" /></video><figcaption>Mechanical assembly</figcaption></figure></div></article>
+
+        <article className="story-step"><div className="step-number">04</div><div className="step-copy"><span>Power and integrate</span><h3>Connect protected power, sensing, and actuation.</h3><p>Separate motor and logic rails supported the Jetson, Teensy controllers, ODrive motor drives, sensors, and CAN network. Protection, monitoring, wiring, and reliable interfaces were central to full-system integration.</p></div><div className="media-grid electrical"><figure className="media dark contain"><img src="/cards/v2/electrical-system.png" alt="CARDS electrical hardware and power testing" /></figure><div className="system-flow"><span>48 V power</span><i>→</i><span>Protected distribution</span><i>→</i><span>Embedded control</span><i>→</i><span>Motor actuation</span></div></div></article>
+
+        <article className="story-step"><div className="step-number">05</div><div className="step-copy"><span>Control and validate</span><h3>Make the robots measurable, tunable, and stable.</h3><p>Cascaded balance and velocity control, calibration, filtering, and real-time tuning shaped the final behavior. Electrical load, gearbox response, communications, balance, and disturbance recovery were validated on physical hardware.</p></div><div className="media-grid data"><figure className="media light contain"><img src="/cards/v2/electrical-chart.png" alt="Position, velocity, and current traces from electrical testing" /></figure><div className="data-points"><div><strong>±1.5°</strong><span>steady-state balance error</span></div><div><strong>&lt;10 ms</strong><span>measured CAN latency</span></div></div></div></article>
+
+        <article className="story-step"><div className="step-number">06</div><div className="step-copy"><span>Demonstrate</span><h3>Two robots with distinct collaborative roles.</h3><p>SPADE demonstrated self-balancing, full mobility, vertical movement, and recovery from the ground. ACE demonstrated self-balancing as the collaborative latching platform.</p></div><div className="media-grid two motion results"><figure className="media"><video autoPlay muted loop playsInline preload="metadata" poster="/cards/v2/spade.png"><source src="/cards/v2/spade-demo.mp4" type="video/mp4" /></video><figcaption>SPADE · full mobility</figcaption></figure><figure className="media"><video autoPlay muted loop playsInline preload="metadata" poster="/cards/v2/ace.png"><source src="/cards/v2/ace-demo.mp4" type="video/mp4" /></video><figcaption>ACE · balancing latch platform</figcaption></figure></div></article>
+      </section>
+
+      <section className="facts shell">{facts.map(([value,label])=><div key={value}><strong>{value}</strong><span>{label}</span></div>)}</section>
+      <section className="credits shell"><div><span>Team</span><p>Yaseen Rehman · Kavi Sreeskandavel · Yosihan Yogeswaran · George Mikhaiel · Aaron Emmanuel</p></div><div><span>Sponsors</span><p>Clearwater Structures Inc. · HobbyKing.com</p></div></section>
+      <nav className="case-next shell"><Link href="/projects">Project library</Link><Link href="/projects/asl-glove">Next project · ASL Glove →</Link></nav>
+    </main>
+  );
+}
