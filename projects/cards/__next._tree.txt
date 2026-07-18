@@ -1,0 +1,8 @@
+:HL["/_next/static/chunks/0l.cse4x53shq.css","style"]
+:HL["/cards/v2/drivetrain-sketch.jpg","image"]
+:HL["/cards/v2/drivetrain-cad.png","image"]
+:HL["/cards/v2/gearbox-redesign.png","image"]
+:HL["/cards/v2/leg-redesign.png","image"]
+:HL["/cards/v2/electrical-system.png","image"]
+:HL["/cards/v2/electrical-chart.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"cards","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"7uA_FPeHRaVKx_vOQoAK5"}
