@@ -19,12 +19,13 @@ export default function Home() {
 
       <section className="featured shell">
         <header className="section-head"><div><p className="eyebrow">Selected work</p><h2>Projects built across disciplines.</h2></div><p>Mechanical design, electronics, embedded intelligence, controls, fabrication, and system validation.</p></header>
-        <div className="project-grid">
+        <div className="project-grid four-projects">
           <ProjectCard number="01" title="Collaborative Autonomous Robot Delivery System" summary="Two modular self-balancing robots developed as a collaborative delivery platform." tags={["Robotics", "Controls", "Electrical"]} href="/projects/cards" media="/cards/v2/cards-robots-together.mp4" poster="/cards/v2/robot-team.png" />
           <ProjectCard number="02" title="Sensor-Based ASL Recognition Glove" summary="A wearable sensing network that recognized ASL letters and produced visual and spoken output." tags={["Wearables", "Embedded", "Machine learning"]} href="/projects/asl-glove" media="/asl/v2/live-recognition-demo.mp4" poster="/asl/v2/glove-hero.jpg" portrait />
           <ProjectCard number="03" title="Dynamic Robot Motion Planning" summary="A comparative study of RRT-family replanning using controlled simulation and a live camera-projector workspace." tags={["Motion planning", "Computer vision", "Simulation"]} href="/projects/motion-planning" media="/motion-planning/planner-comparison.mp4" poster="/motion-planning/planner-snapshots.jpg" />
+          <ProjectCard number="04" title="Circulr Reverse Vending Machine" summary="A compact container-return machine taken from concept through build, testing, and grocery-store deployment." tags={["Industry", "Mechatronics", "Product development"]} href="/projects/circulr-rvm" media="/circulr/return-demo.mp4" poster="/circulr/fiesta-farms.jpg" still />
         </div>
-        <Link className="archive-link" href="/projects"><span>View the complete project library</span><b>03 documented projects ↗</b></Link>
+        <Link className="archive-link" href="/projects"><span>View the complete project library</span><b>04 documented projects ↗</b></Link>
       </section>
 
       <section className="discipline-band shell">
