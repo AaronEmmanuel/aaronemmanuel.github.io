@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const facts = [["A–Z","complete alphabet"],["8","fused sensor features"],["~50 Hz","live sensing rate"],["2","visual and spoken outputs"]];
+const facts = [["A–Z","complete alphabet"],["99.6%","held-out accuracy"],["2 weeks","implementation timeline"],["2","visual and spoken outputs"]];
 
 export default function AslGlovePage() {
   return (
@@ -11,6 +11,8 @@ export default function AslGlovePage() {
       </header>
 
       <section className="case-overview shell"><div><p className="eyebrow">System developed</p><h2>Wearable sensing connected to intelligent output.</h2></div><div><p>Five flex sensors and a six-axis IMU captured finger posture and hand movement. An ESP32 conditioned and streamed the data to a Python recognition pipeline with networked display and text-to-speech output.</p><div className="scope-tags"><span>Wearable hardware</span><span>Embedded sensing</span><span>Bluetooth</span><span>Machine learning</span><span>Python interface</span></div></div></section>
+
+      <section className="contribution shell"><p className="eyebrow">My contribution</p><div><h2>End-to-end sensing and recognition.</h2><p>My work spanned sensor integration, embedded firmware, filtering and calibration, data collection, model development, and the Python interface with networked visual and spoken output. The working prototype was implemented in a two-week project sprint with George Mikhaiel.</p></div></section>
 
       <section className="story shell">
         <header className="story-head"><p className="eyebrow">Project storyline</p><h2>From hand motion to recognized language.</h2></header>

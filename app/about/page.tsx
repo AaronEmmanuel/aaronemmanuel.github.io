@@ -11,6 +11,7 @@ export default function AboutPage() {
         <div className="interest-list">{interests.map((item, index)=><div key={item}><span>{String(index + 1).padStart(2,"0")}</span><strong>{item}</strong></div>)}</div>
       </section>
       <section className="about-note shell"><div><p className="eyebrow">How I approach projects</p><h2>Follow the problem across disciplines.</h2></div><p>My projects often move through concept development, mechanical and electrical design, embedded programming, system integration, and physical testing. I value the iteration that happens between those stages because that is usually where the most useful engineering decisions emerge.</p></section>
+      <section className="contact-panel shell"><div><p className="eyebrow">Contact</p><h2>Let’s talk engineering.</h2></div><div className="contact-links"><a href="mailto:aaron.p.emmanuel@outlook.com"><span>Email</span><strong>aaron.p.emmanuel@outlook.com ↗</strong></a><a href="/Aaron-Emmanuel-Resume.pdf" target="_blank"><span>Résumé</span><strong>View résumé ↗</strong></a><a href="https://ca.linkedin.com/in/aaron-emmanuel" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Connect on LinkedIn ↗</strong></a></div></section>
       <section className="next-panel shell"><p className="eyebrow">See the work</p><h2>Explore the systems behind the ideas.</h2><Link className="button primary" href="/projects">View all projects ↗</Link></section>
     </main>
   );

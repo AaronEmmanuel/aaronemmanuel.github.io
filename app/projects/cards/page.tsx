@@ -12,6 +12,8 @@ export default function CardsPage() {
 
       <section className="case-overview shell"><div><p className="eyebrow">System developed</p><h2>One platform, built across the full engineering loop.</h2></div><div><p>The project combined mechanical design, custom fabrication, high and low-voltage electrical systems, embedded control, sensor feedback, and extensive physical testing.</p><div className="scope-tags"><span>Mechanical design</span><span>Electrical systems</span><span>Embedded control</span><span>Assembly</span><span>Testing</span></div></div></section>
 
+      <section className="contribution shell"><p className="eyebrow">My contribution</p><div><h2>Controls, power, and physical integration.</h2><p>I contributed throughout the full build, with primary responsibility for electrical integration, embedded programming, power distribution, physical assembly, and balance-control development. I personally wrote and iteratively tuned the balance controller on the physical robots.</p></div></section>
+
       <section className="story shell">
         <header className="story-head"><p className="eyebrow">Project storyline</p><h2>From architecture to demonstrated motion.</h2></header>
 
