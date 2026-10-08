@@ -1,3 +1,4 @@
+import { ViewportVideo } from "@/components/viewport-video";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -34,7 +35,7 @@ export default function CirculrPage() {
 
       <section id="return-experience" className="circulr-demo shell">
         <div><p className="eyebrow">01 / The return experience</p><h2>Scan. Return.<br />Get rewarded.</h2><p className="circulr-intro">A guided transaction connects a physical container to a validated refund, with the machine checking the handoff along the way.</p><ol className="return-steps">{returnSteps.map(([title, copy], i) => <li key={title}><span>0{i + 1}</span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></div>
-        <figure className="circulr-video"><video autoPlay muted loop playsInline controls preload="metadata" poster="/circulr/return-poster.jpg" aria-label="Customer scanning and returning a container, then pressing the finish button"><source src="/circulr/return-demo.mp4" type="video/mp4" /></video><figcaption>A return at the deployed machine. Silent video.</figcaption></figure>
+        <figure className="circulr-video"><ViewportVideo loop controls poster="/circulr/return-poster.jpg" aria-label="Customer scanning and returning a container, then pressing the finish button"><source src="/circulr/return-demo.mp4" type="video/mp4" /></ViewportVideo><figcaption>A return at the deployed machine. Silent video.</figcaption></figure>
       </section>
 
       <section className="circulr-evolution shell"><header><p className="eyebrow">02 / Product evolution</p><h2>Smaller footprint.<br />A more focused machine.</h2><p>The first system explored four return streams. Store feedback and return patterns shaped a simpler, single-module product centered on jars and cans.</p></header><div className="evolution-grid"><article><span>Initial full-scale system</span><h3>Four streams, one platform.</h3><p>A four-module design accommodated wine bottles, mason jars, yogurt tubs, and cans. Its conveyor-based architecture established the first complete return system.</p></article><article><span>Deployed mini RVM</span><h3>Built around the most common returns.</h3><p>A compact single-module machine reduced the footprint and number of mechanisms. Focusing on jars and cans simplified the return path and made the customer interaction quicker.</p></article></div></section>

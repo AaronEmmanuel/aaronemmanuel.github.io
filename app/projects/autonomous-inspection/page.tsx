@@ -1,3 +1,4 @@
+import { ViewportVideo } from "@/components/viewport-video";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 function Film({ file, poster, label, caption }: { file: string; poster: string; label: string; caption: string }) {
-  return <figure className="inspection-film"><video controls playsInline preload="none" poster={`${base}/${poster}`} aria-label={label}><source src={`${base}/${file}`} type="video/mp4" /></video><figcaption>{caption}<a href={`${base}/${file}`} target="_blank" rel="noreferrer">Open video ↗</a></figcaption></figure>;
+  return <figure className="inspection-film"><ViewportVideo controls poster={`${base}/${poster}`} aria-label={label}><source src={`${base}/${file}`} type="video/mp4" /></ViewportVideo><figcaption>{caption}<a href={`${base}/${file}`} target="_blank" rel="noreferrer">Open video ↗</a></figcaption></figure>;
 }
 
 function ImageEvidence({ file, alt, caption }: { file: string; alt: string; caption: string }) {

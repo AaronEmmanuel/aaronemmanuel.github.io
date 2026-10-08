@@ -3,6 +3,7 @@ import "./globals.css";
 import "./projects/autonomous-inspection/inspection.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { SiteAnalytics } from "@/components/site-analytics";
 
 const title = "Aaron Emmanuel | Mechatronics & Robotics";
 const description = "Engineering portfolio focused on robotics, mechatronics, embedded control, and electrical systems.";
@@ -37,6 +38,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <SiteAnalytics />
       </body>
     </html>
   );
