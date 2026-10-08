@@ -1,0 +1,251 @@
+{
+  "passed": true,
+  "passed_checks": 17,
+  "check_count": 17,
+  "checks": [
+    {
+      "name": "Ordered ROS-to-native-SDK Move payloads",
+      "passed": true,
+      "measurements": {
+        "ros_publications": 2210,
+        "sdk_handlers": 2210,
+        "max_error": 1.4674168380413022e-08
+      }
+    },
+    {
+      "name": "Native SDK handlers returned success",
+      "passed": true,
+      "measurements": {
+        "handler_count": 2223,
+        "stop_handlers": 13
+      }
+    },
+    {
+      "name": "Native DDS feedback matches measured physics",
+      "passed": true,
+      "measurements": {
+        "samples": 3084,
+        "matched": 3084,
+        "max_scalar_error": 5.957745163875927e-08
+      }
+    },
+    {
+      "name": "Actual body-mounted 3D rays intersect the fixture geometry",
+      "passed": true,
+      "measurements": {
+        "sampled_rays": 1651,
+        "max_range_error": 8.881784197001252e-16,
+        "scan_samples": 1569
+      }
+    },
+    {
+      "name": "AMCL map pose agrees with independent physics feedback",
+      "passed": true,
+      "measurements": {
+        "asynchronous_samples": 771,
+        "median_xy_error": 0.029030516784536067,
+        "p95_xy_error": 0.043324465586987326,
+        "max_xy_error": 0.05304382815371942
+      }
+    },
+    {
+      "name": "AMCL heading agrees with measured physics feedback",
+      "passed": true,
+      "measurements": {
+        "p95_heading_error_deg": 1.3783132863077334,
+        "max_heading_error_deg": 6.107686065633024
+      }
+    },
+    {
+      "name": "Four inspection-route goals completed via real Nav2 actions",
+      "passed": true,
+      "measurements": {
+        "goals": [
+          {
+            "name": "pump",
+            "status": 4,
+            "xy_error": 0.11982325148025921,
+            "yaw_error": 0.13107157893210628,
+            "nav_action_attempts": 1
+          },
+          {
+            "name": "valve",
+            "status": 4,
+            "xy_error": 0.0953610168213244,
+            "yaw_error": 0.16471179370652989,
+            "nav_action_attempts": 1
+          },
+          {
+            "name": "electrical",
+            "status": 4,
+            "xy_error": 0.20077579230857423,
+            "yaw_error": 0.11371249093176442,
+            "nav_action_attempts": 1
+          },
+          {
+            "name": "home",
+            "status": 4,
+            "xy_error": 0.1844813399619534,
+            "yaw_error": 0.11051336592518834,
+            "nav_action_attempts": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Navigation goal error bounds",
+      "passed": true,
+      "measurements": {
+        "max_xy_error": 0.20077579230857423,
+        "max_yaw_error": 0.16471179370652989
+      }
+    },
+    {
+      "name": "Stopped robot reaches targets in measured physics coordinates",
+      "passed": true,
+      "measurements": {
+        "world_xy_errors": [
+          0.11333070935673523,
+          0.10098529420194537,
+          0.230958686244109,
+          0.19003055982136594
+        ],
+        "world_yaw_errors_deg": [
+          7.2625341202754194,
+          9.498739936940924,
+          6.341230456549292,
+          5.235307814869523
+        ]
+      }
+    },
+    {
+      "name": "Three conditions from fresh actual camera frames",
+      "passed": true,
+      "measurements": {
+        "inspections": [
+          {
+            "name": "pump",
+            "condition": "healthy",
+            "frames": 14,
+            "votes": {
+              "healthy": 14,
+              "warning": 0,
+              "unable_to_inspect": 0
+            }
+          },
+          {
+            "name": "valve",
+            "condition": "healthy",
+            "frames": 14,
+            "votes": {
+              "healthy": 14,
+              "warning": 0,
+              "unable_to_inspect": 0
+            }
+          },
+          {
+            "name": "electrical",
+            "condition": "warning",
+            "frames": 13,
+            "votes": {
+              "healthy": 0,
+              "warning": 13,
+              "unable_to_inspect": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upright locomotion and no reported obstacle contacts",
+      "passed": true,
+      "measurements": {
+        "obstacle_contact_samples": 0,
+        "min_height": 0.3100881129412042,
+        "max_abs_roll_or_pitch_deg": 5.088132407062814
+      }
+    },
+    {
+      "name": "No relay/watchdog/API fault during nominal route",
+      "passed": true,
+      "measurements": {
+        "fault_events": 0
+      }
+    },
+    {
+      "name": "Returned home and measured settling after stop",
+      "passed": true,
+      "measurements": {
+        "final_second_mean_planar_speed": 0.008096520542850889,
+        "final_second_mean_abs_yaw_rate": 0.018468312881378568
+      }
+    },
+    {
+      "name": "Graceful SDK shutdown StopMove",
+      "passed": true,
+      "measurements": {
+        "backend_stopped": true
+      }
+    },
+    {
+      "name": "Independent ROS sensor delivery and unchanged encoded payloads",
+      "passed": true,
+      "measurements": {
+        "cloud_messages": 1534,
+        "matching_cloud_payloads": 1534,
+        "rgb_messages": 438,
+        "published_rgb_frames": 441,
+        "matching_rgb_payloads": 438,
+        "published_cloud_frames": 1544,
+        "scan_messages": 1534
+      }
+    },
+    {
+      "name": "Inspection re-read from received ROS RGB pixels",
+      "passed": true,
+      "measurements": {
+        "stations": [
+          {
+            "station": "pump",
+            "received_frames": 15,
+            "correct": 15
+          },
+          {
+            "station": "valve",
+            "received_frames": 14,
+            "correct": 14
+          },
+          {
+            "station": "electrical",
+            "received_frames": 14,
+            "correct": 14
+          }
+        ]
+      }
+    },
+    {
+      "name": "Final home alignment avoids repeated approach/turn boundary hunting",
+      "passed": true,
+      "measurements": {
+        "phase_samples": 256,
+        "alignment_engagements": 1,
+        "boundary_releases": 0,
+        "alignment_wall_seconds": 8.440580061,
+        "command_direction_reversals": 0,
+        "enter_radius": 0.18,
+        "release_radius": 0.26,
+        "goal_xy_tolerance_unchanged": 0.18
+      }
+    }
+  ],
+  "simulation_wall_ratio": 0.9999953923599989,
+  "wall_mission_seconds": 143.21057230799943,
+  "map_method": "supplied geometry-derived floorplan; not SLAM",
+  "odometry_method": "native SDK feedback of measured simulator truth; not estimated hardware odometry",
+  "controller": "custom Sport API simulation server + credited reused walking policy",
+  "limitations": [
+    "No hardware deployment or proprietary Unitree Sport controller",
+    "No Go2 SLAM demonstrated; supplied floorplan and simulator-derived odometry",
+    "Not a reliability, rough-terrain, hard-real-time or precise velocity tracking guarantee"
+  ]
+}

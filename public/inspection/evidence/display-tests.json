@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "check_count": 7,
+  "checks": [
+    "only confirmed tracks get consecutive public numbers",
+    "six original final-run objects display 1 through 6",
+    "reacquisitions retain public numbers",
+    "measured map label rectangles remain inside all edges",
+    "unconfirmed candidates have no public numbered labels",
+    "long RGB labels remain inside image at lower-right edge",
+    "RGB labels do not overlap on every received tracking frame"
+  ],
+  "mapping": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "6": 4,
+    "8": 5,
+    "10": 6
+  },
+  "confirmed_times": {
+    "1": 3.639999999,
+    "2": 3.639999999,
+    "3": 11.68,
+    "6": 16.24,
+    "8": 27.099999999,
+    "10": 113.239999999
+  },
+  "scope": "Actual saved run confirmation/ID replay and production label geometry, no new robot motion"
+}
