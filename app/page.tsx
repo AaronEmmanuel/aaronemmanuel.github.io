@@ -1,3 +1,4 @@
+import { ViewportVideo } from "@/components/viewport-video";
 import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
 
@@ -12,7 +13,7 @@ export default function Home() {
           <div className="actions"><Link className="button primary" href="/projects">Explore projects <span>↗</span></Link><Link className="button quiet" href="/about">More about me</Link></div>
         </div>
         <div className="home-reel">
-          <video autoPlay muted loop playsInline preload="auto" poster="/cards/v2/cards-robots-poster.jpg" aria-label="Two self-balancing robots operating together"><source src="/cards/v2/cards-robots-together.mp4" type="video/mp4" /></video>
+          <ViewportVideo loop poster="/cards/v2/cards-robots-poster.jpg" aria-label="Two self-balancing robots operating together"><source src="/cards/v2/cards-robots-together.mp4" type="video/mp4" /></ViewportVideo>
           <div className="reel-caption"><span>Featured system</span><strong>CARDS collaborative robot platform</strong></div>
         </div>
       </section>
