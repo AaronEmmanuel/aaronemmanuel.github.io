@@ -1,0 +1,140 @@
+{
+  "go2-depth-tracking.mp4": {
+    "sha256": "880a9788d2f4b8d8293301f01111b46eebb56734ebb1d36eb5b535056fb193ed",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-depth-tracking.mp4",
+    "trial": "depth_tracking_final_1",
+    "caption": "Actual SDK-driven Go2 inspection with matched simulated RGB/depth, surface distances, stable IDs and faded unseen-object map memory. Replayed recorded measurements with confirmation-only numbering and contained labels at 3x original wall-time cadence; stationary targets, supplied map and truth-derived odometry."
+  },
+  "go2-depth-view.png": {
+    "sha256": "20aa4cac338a35f6a82cd26e057373b085295213170230ec7b23d1972ccc697e",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-depth-view.png",
+    "trial": "depth_tracking_final_1",
+    "caption": "Revised recorded presentation with confirmed public numbers 1\u20136, high-contrast map badges, actual RGB/depth observations and measured ranges."
+  },
+  "inspection-mission.mp4": {
+    "sha256": "06a8158221597dc930523b35969ca4fc959035a01750b087c84e9980683592f1",
+    "original_source": "outputs/Portfolio_Project_Kit/media/inspection-mission.mp4",
+    "trial": "camera_follow_final_1",
+    "caption": "Actual TurtleBot inspection mission: elevated following Gazebo view, RViz, and onboard camera. Approximately 3\u00d7 time-lapse; playback speed is not simulator speed."
+  },
+  "turtlebot-inspection.png": {
+    "sha256": "7770a57e11b694c4fdd40ad4129595df1e73867cf28ad45d5912fd83f754fe66",
+    "original_source": "outputs/Gazebo_Follow_View.png",
+    "trial": "camera_follow_final_1",
+    "caption": "Actual TurtleBot saved-map inspection capture, approximately 3x wall time."
+  },
+  "go2-autonomous-inspection.mp4": {
+    "sha256": "eabd604cdbec88535eaf10872ce0587be94449924413932a40f596d64b2857ae",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-autonomous-inspection.mp4",
+    "trial": "go2_arrival_final_1",
+    "caption": "Actual torque-driven simulated Go2 completes three visual inspections and home through ROS 2/Nav2 and official Unitree SDK calls. Supplied floorplan, physics-derived odometry and custom simulation controller; approximately 3\u00d7 wall-time time-lapse."
+  },
+  "go2-inspection-view.png": {
+    "sha256": "673b98d8f6ccb2ce5fd0516c0effaea82996820dee800551e2ede60137fef1b9",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-inspection-view.png",
+    "trial": "go2_arrival_final_1",
+    "caption": "Actual final native Go2 inspection window: measured physics, ROS map/path, onboard camera, SDK counters and 17/17 checks."
+  },
+  "go2-physics-response.mp4": {
+    "sha256": "6690488047a0d424f2fa811f647bb66afac7e07d559b6e446f8e957085364401",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-physics-response.mp4",
+    "trial": "go2_visible_final_2",
+    "caption": "ROS commands pass through the official Go2 SDK into a custom MuJoCo simulation backend using a credited pre-trained walking policy. Walking, turning and stopping are measured physics responses. Normal wall-time playback at approximately 5.10 fps capture; no physical hardware."
+  },
+  "unitree-software-tests.mp4": {
+    "sha256": "bc32ac7a41e507e8804caa48f476b25ce439609ee78bd882a8572a400895cb52",
+    "original_source": "outputs/Portfolio_Project_Kit/media/unitree-software-tests.mp4",
+    "trial": "sdk_flow_final_1",
+    "caption": "Recorded SDK software tests: command mapping, speed limits, watchdog stop requests, and API error replies. Normal playback; approximately 1.64 fps capture. No Unitree motion simulation or hardware."
+  },
+  "sdk-tests.png": {
+    "sha256": "3fee13f0fb595f74e73177af9c3864bbb6ef85dfe5daf872f78ad07219c01650",
+    "original_source": "outputs/Portfolio_Project_Kit/media/unitree/stage-2.png",
+    "trial": "sdk_flow_final_1",
+    "caption": "Actual SDK handler receives clamped forward, lateral, and yaw values. Software-only testing; no physical stopping or locomotion demonstrated."
+  },
+  "learned-camera-detection.mp4": {
+    "sha256": "c0b7e4f96507adda7cd18f7a1ffc8dac569fd7a8eae9cc3de77c1bd710efa62f",
+    "original_source": "outputs/Portfolio_Project_Kit/media/learned-camera-detection.mp4",
+    "trial": "learned_camera_distributed_1",
+    "caption": "Actual SDK-driven Go2 inspection with an original PyTorch-trained RGB detector recognizing six distributed synthetic safety targets. Recorded native viewer composites at 3\u00d7 wall time; supplied map, physics-derived odometry, no hardware."
+  },
+  "learned-camera-view.png": {
+    "sha256": "4f5e7bc87e24f9aa529523b2508d1545b057a0bb8e31a8148782fd5075afe22b",
+    "original_source": "outputs/Portfolio_Project_Kit/media/learned-camera-view.png",
+    "trial": "learned_camera_distributed_1",
+    "caption": "Recorded native viewer composite with actual moving-camera detections."
+  },
+  "learned-camera-training.png": {
+    "sha256": "5c365fd555a2e893816d367ed5e933704453cc2ccb89a2db63ff789e19be5160",
+    "original_source": "outputs/Portfolio_Project_Kit/media/learned-camera-training.png",
+    "trial": "learned_camera_distributed_1",
+    "caption": "Training curve and held-out synthetic test by class. 600 images/30 scenes; 15/148 empty images had a false detection."
+  },
+  "learned-raw.png": {
+    "sha256": "9016624e0c7b6d60233bddda5d3a3fce921b227f8ea5f32816daee4813079542",
+    "original_source": "outputs/Portfolio_Project_Kit/media/learned-perception/rack_south_cone_raw.png",
+    "trial": "learned_camera_distributed_1",
+    "caption": "Decoded actual ROS camera pixels, before annotation. Procedural synthetic objects; no physical/general recognition claim."
+  },
+  "learned-annotated.png": {
+    "sha256": "b4147321422671459343e2a92f4c11900f5e9efa83d8cdf11af251dc948fa54d",
+    "original_source": "outputs/Portfolio_Project_Kit/media/learned-perception/rack_south_cone_annotated.png",
+    "trial": "learned_camera_distributed_1",
+    "caption": "Decoded actual ROS camera pixels with learned two-class boxes/scores. Procedural synthetic objects; no physical/general recognition claim."
+  },
+  "go2-obstacle-detour.mp4": {
+    "sha256": "a621afa5b27feccc740e0b0885247b0cf334dce1f10eb3c79b9789496dc25d69",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-obstacle-detour.mp4",
+    "trial": "avoidance_detour_final_1",
+    "caption": "Actual SDK-driven Go2 detour after a collision/LiDAR crate appears; original inspection mission completes. Exact native viewer composites at 3x wall time, not hardware."
+  },
+  "go2-avoidance-view.png": {
+    "sha256": "60b6ffe6ae7d4136e92029bea7d91cae3d272b7f59c4b5e24a2c77ad7a990071",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-avoidance-view.png",
+    "trial": "avoidance_detour_final_1",
+    "caption": "Recorded live native-viewer composite: new LiDAR obstacle cells, original/revised path, measured robot and actual learned camera detections."
+  },
+  "go2-avoidance-paths.png": {
+    "sha256": "dc906a30df9f573278b1a776ea8428a56fc2398ad9d101985e1eeaf6dba6d472",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-avoidance-paths.png",
+    "trial": null,
+    "caption": "Recorded original/revised Nav2 path and measured robot movement for crate and barrier cases; nominal map/world alignment and sampled clearance."
+  },
+  "go2-blocked-passage.mp4": {
+    "sha256": "61557d0e1cc7ba379b7945dc4285ac73ea7d03feb8e57164020c971bdee8f214",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-blocked-passage.mp4",
+    "trial": "avoidance_blocked_final_1",
+    "caption": "Full-width barrier: no-route planner abort, mission disarm and measured settling. Explicit no-recovery tree; 3x wall-time playback, not a physical safety guarantee."
+  },
+  "go2-blocked-completed.png": {
+    "sha256": "b3e1d5f105955abeccfc46622b804cd2804f3af1f9a676b6df5cfb17053e88dc",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-blocked-completed.png",
+    "trial": "avoidance_blocked_final_1",
+    "caption": "Actual completed X11 result window after path_blocked; backend stopped."
+  },
+  "go2-depth-pair.png": {
+    "sha256": "b097f8d3da2d82fc69d92a5f966f827a0d1d5a38dff884fd17ffb9e9db4f4d8e",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-depth-pair.png",
+    "trial": "depth_tracking_final_1",
+    "caption": "Actual received ROS RGB and aligned 32FC1 depth, decoded from saved bytes. Optical-Z colour scale differs from labelled Euclidean surface range."
+  },
+  "go2-depth-occlusion.png": {
+    "sha256": "97015ec9fc73b9bf40b3c0cee10e55f851f2b786c8d9efcaaacf41717b241ffa",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-depth-occlusion.png",
+    "trial": "controlled_occlusion_final_1",
+    "caption": "Separate frozen-camera render test: genuine opaque occlusion and same-ID reacquisition using unchanged RGB model and production tracker."
+  },
+  "pump-panel.png": {
+    "sha256": "ba93606c2bffe263301a98dfe2753b088832163e9c84e18609de49a145ad3e20",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-perception/pump_annotated.png",
+    "trial": "go2_arrival_final_1",
+    "caption": "Actual simulated Go2 onboard annotated image: pump, healthy. Known-marker indicator reading, not general industrial diagnosis."
+  },
+  "electrical-panel.png": {
+    "sha256": "05ddae087b014841edc838a06a9847921e198c65de2693ec0bf78c2c58717ace",
+    "original_source": "outputs/Portfolio_Project_Kit/media/go2-perception/electrical_annotated.png",
+    "trial": "go2_arrival_final_1",
+    "caption": "Actual simulated Go2 onboard annotated image: electrical, warning. Known-marker indicator reading, not general industrial diagnosis."
+  }
+}
