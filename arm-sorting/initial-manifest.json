@@ -1,0 +1,195 @@
+{
+  "frozen_at_utc": "2026-10-10T11:22:27.931061+00:00",
+  "cases": [
+    {
+      "id": "placement-00",
+      "seed": 89100,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Put the red component in the left tray"
+      ],
+      "expected": "place",
+      "color": "red",
+      "tray": "left"
+    },
+    {
+      "id": "placement-01",
+      "seed": 89101,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Put the green component in the right tray"
+      ],
+      "expected": "place",
+      "color": "green",
+      "tray": "right"
+    },
+    {
+      "id": "placement-02",
+      "seed": 89102,
+      "condition": "noise",
+      "variant": "default",
+      "requests": [
+        "Put the blue component in the left tray"
+      ],
+      "expected": "place",
+      "color": "blue",
+      "tray": "left"
+    },
+    {
+      "id": "placement-03",
+      "seed": 89103,
+      "condition": "noise",
+      "variant": "default",
+      "requests": [
+        "Put the red component in the right tray"
+      ],
+      "expected": "place",
+      "color": "red",
+      "tray": "right"
+    },
+    {
+      "id": "placement-04",
+      "seed": 89104,
+      "condition": "dim",
+      "variant": "default",
+      "requests": [
+        "Put the green component in the left tray"
+      ],
+      "expected": "place",
+      "color": "green",
+      "tray": "left"
+    },
+    {
+      "id": "placement-05",
+      "seed": 89105,
+      "condition": "wide",
+      "variant": "default",
+      "requests": [
+        "Put the blue component in the right tray"
+      ],
+      "expected": "place",
+      "color": "blue",
+      "tray": "right"
+    },
+    {
+      "id": "spatial-leftmost",
+      "seed": 89106,
+      "condition": "nominal",
+      "variant": "spatial",
+      "requests": [
+        "Put the leftmost component in the left tray"
+      ],
+      "expected": "spatial-place",
+      "tray": "left"
+    },
+    {
+      "id": "spatial-rightmost",
+      "seed": 89107,
+      "condition": "nominal",
+      "variant": "spatial",
+      "requests": [
+        "Put the rightmost component in the right tray"
+      ],
+      "expected": "spatial-place",
+      "tray": "right"
+    },
+    {
+      "id": "pick-followup",
+      "seed": 89108,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Pick up the blue component",
+        "left"
+      ],
+      "expected": "dialogue",
+      "color": "blue",
+      "tray": "left"
+    },
+    {
+      "id": "generic-ambiguity",
+      "seed": 89109,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Pick up a component"
+      ],
+      "expected": "clarification"
+    },
+    {
+      "id": "duplicate-red",
+      "seed": 89110,
+      "condition": "nominal",
+      "variant": "duplicate_red",
+      "requests": [
+        "Pick up the red component"
+      ],
+      "expected": "clarification"
+    },
+    {
+      "id": "absent-red",
+      "seed": 89111,
+      "condition": "nominal",
+      "variant": "missing_red",
+      "requests": [
+        "Pick up the red component"
+      ],
+      "expected": "clarification"
+    },
+    {
+      "id": "missed-grasp",
+      "seed": 89112,
+      "condition": "gripper_fault",
+      "variant": "default",
+      "requests": [
+        "Put the red component in the right tray"
+      ],
+      "expected": "recovery",
+      "color": "red",
+      "tray": "right"
+    },
+    {
+      "id": "moved-target",
+      "seed": 89113,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Put the red component in the left tray"
+      ],
+      "expected": "moved-target",
+      "color": "red",
+      "tray": "left"
+    },
+    {
+      "id": "cancel-while-lifted",
+      "seed": 89114,
+      "condition": "nominal",
+      "variant": "default",
+      "requests": [
+        "Pick up the red component"
+      ],
+      "expected": "cancel",
+      "color": "red"
+    }
+  ],
+  "protocol": "Reserved scenes never used for development; all outcomes retained, no tuning on failures. Entire runtime Ubuntu ROS2 Humble, domain79, continuous simulated physics.",
+  "vision_command": "/home/aaron/arm-sorting-portfolio/external-tools/llama.cpp/build/bin/llama-server -m /home/aaron/arm-sorting-portfolio/external-models/qwen3-vl-2b/text-Q8_0.gguf --mmproj /home/aaron/arm-sorting-portfolio/external-models/qwen3-vl-2b/vision-F16.gguf --host 127.0.0.1 --port 8870 --threads 4 --threads-batch 4 --ctx-size 4096 --parallel 1 --no-mmproj-offload --alias qwen3-vl-2b --jinja --image-min-tokens 64 --image-max-tokens 96",
+  "acceptance": {
+    "completed_placement_cases": 10,
+    "clarification_cases": 3,
+    "moved_target_refusals": 1,
+    "verified_lifted_cancellations": 1,
+    "wrong_object_handling": 0,
+    "unexpected_collisions": 0
+  },
+  "limits": {
+    "camera_wall_age_s": 1.2,
+    "camera_simulation_lag_s": 0.5,
+    "robot_wall_age_s": 0.8,
+    "command_lease_s": 0.6,
+    "communication_lease_s": 1.2
+  },
+  "scope": "Known simulated boxes; spatial direction is image space. Duplicate-instance execution explicitly unsupported and must clarify. Small unpaired condition samples; no hardware or general-object claim."
+}

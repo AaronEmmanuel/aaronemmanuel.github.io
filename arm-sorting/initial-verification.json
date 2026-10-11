@@ -1,0 +1,210 @@
+{
+  "manifest_sha256": "eaa41021efbf03c10af761e670c7b8822d2d7593306ccff6657fc0403d04eb79",
+  "captured_python_source_sha256": "e52e14ffd95a5a2245f2157b99028b128fea8b2a80fa0eb2cfd00b11f8a2149d",
+  "cases": 15,
+  "passed": 14,
+  "gate_passed": false,
+  "original_videos_fully_decoded": true,
+  "records": [
+    {
+      "id": "placement-00",
+      "passed": true,
+      "frames_decoded": 346,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.821072187005484,
+      "max_camera_simulation_lag_s": 0.2800000000000935,
+      "video_sha256": "c7d397efd27670ff48952d4691f241a6245c98c10f121415af14ae703cbdc999"
+    },
+    {
+      "id": "placement-01",
+      "passed": true,
+      "frames_decoded": 389,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8202107030010666,
+      "max_camera_simulation_lag_s": 0.29999999999996696,
+      "video_sha256": "b4e9f09440989d58d5623e3610c9726f435b717037277aa1443c57043ecb7b56"
+    },
+    {
+      "id": "placement-02",
+      "passed": false,
+      "frames_decoded": 33,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": {
+        "ack_seconds": 0.00035266499617137015,
+        "post_halt_samples": 16,
+        "simulation_paused": true
+      },
+      "max_camera_wall_age_s": 0.8193313269948703,
+      "max_camera_simulation_lag_s": 0.25999999999997137,
+      "video_sha256": "b66dbb9a21c45a36c6504494a62dbd81df872b7ad079d1647c98b10806702f36"
+    },
+    {
+      "id": "placement-03",
+      "passed": true,
+      "frames_decoded": 277,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8206901609955821,
+      "max_camera_simulation_lag_s": 0.2400000000002933,
+      "video_sha256": "92fba5c3005e3d989b2b55764c3db7df600834fc4b63ef6d6204d1c319b50ee9"
+    },
+    {
+      "id": "placement-04",
+      "passed": true,
+      "frames_decoded": 447,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.82163537699671,
+      "max_camera_simulation_lag_s": 0.29999999999983373,
+      "video_sha256": "52b530c3f7bfec8306210a18891850a26c8f02337242d4f9aeb23d0d96a7b93b"
+    },
+    {
+      "id": "placement-05",
+      "passed": true,
+      "frames_decoded": 318,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8406548599959933,
+      "max_camera_simulation_lag_s": 0.26000000000031775,
+      "video_sha256": "14fe16de9da1aa6469fd1f71221eb11a1cb4f957c3c4a6e21a11996f00b47245"
+    },
+    {
+      "id": "spatial-leftmost",
+      "passed": true,
+      "frames_decoded": 342,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.817430103001243,
+      "max_camera_simulation_lag_s": 0.27999999999996916,
+      "video_sha256": "8363750e2a04c04124500032cb3de96143b57afa89a77fffc941ddc919874b70",
+      "independent_spatial_rank_verified": true
+    },
+    {
+      "id": "spatial-rightmost",
+      "passed": true,
+      "frames_decoded": 376,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8212595349978074,
+      "max_camera_simulation_lag_s": 0.31999999999996476,
+      "video_sha256": "aa073211c9c17f8ddc72e67f0cbb0438a2a011cb3da74768ead8cf24dbad937c",
+      "independent_spatial_rank_verified": true
+    },
+    {
+      "id": "pick-followup",
+      "passed": true,
+      "frames_decoded": 340,
+      "source_and_images_verified": true,
+      "physical_successes": 2,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8210516949984594,
+      "max_camera_simulation_lag_s": 0.2800000000003422,
+      "video_sha256": "c3e8406325e5f6e5c4856d6e26f426e2f12a86f1ab68a0605b378c6d5add67aa"
+    },
+    {
+      "id": "generic-ambiguity",
+      "passed": true,
+      "frames_decoded": 30,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8171239340008469,
+      "max_camera_simulation_lag_s": 0.21999999999997621,
+      "video_sha256": "1cc262d73f692d9c62f2631eb7ec68d56f44eb60a20ed201233afe8e94b8cade"
+    },
+    {
+      "id": "duplicate-red",
+      "passed": true,
+      "frames_decoded": 32,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.6311093889962649,
+      "max_camera_simulation_lag_s": 0.2400000000000002,
+      "video_sha256": "0113df87bd7e25a432e4edff5e7d688e347c233fc62be3e0ba0376f9b579a4b1"
+    },
+    {
+      "id": "absent-red",
+      "passed": true,
+      "frames_decoded": 31,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.8185383820018615,
+      "max_camera_simulation_lag_s": 0.2400000000000002,
+      "video_sha256": "79cada21d4069cd9219edb21f89ac6ff231c15699971e55104048458a50aa637"
+    },
+    {
+      "id": "missed-grasp",
+      "passed": true,
+      "frames_decoded": 430,
+      "source_and_images_verified": true,
+      "physical_successes": 1,
+      "forbidden_contacts": 0,
+      "halt_checks": null,
+      "max_camera_wall_age_s": 0.820881254003325,
+      "max_camera_simulation_lag_s": 0.31999999999996476,
+      "video_sha256": "da24735806ed1e4747965830f3a92e4d551ed9fa6db341dc96385be4adf463c8"
+    },
+    {
+      "id": "moved-target",
+      "passed": true,
+      "frames_decoded": 88,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": {
+        "ack_seconds": 0.00034305300505366176,
+        "post_halt_samples": 8,
+        "simulation_paused": true
+      },
+      "max_camera_wall_age_s": 0.8207349520016578,
+      "max_camera_simulation_lag_s": 0.31999999999996476,
+      "video_sha256": "8f2efa6058121926c9c1e548568f0ff0c72ac7b9ef29b325466a46c3eb46b3e7"
+    },
+    {
+      "id": "cancel-while-lifted",
+      "passed": true,
+      "frames_decoded": 145,
+      "source_and_images_verified": true,
+      "physical_successes": 0,
+      "forbidden_contacts": 0,
+      "halt_checks": {
+        "ack_seconds": 0.18622085400420474,
+        "post_halt_samples": 10,
+        "simulation_paused": true
+      },
+      "max_camera_wall_age_s": 0.8237543799987179,
+      "max_camera_simulation_lag_s": 0.2799999999998448,
+      "video_sha256": "10b06c3a472c1644bd1097ac462ace5d414f91e440603313b6b51cadf2cbad19"
+    }
+  ],
+  "model_native_abstention_or_validated_selection": {
+    "correct": 12,
+    "attempted": 15,
+    "definition": "For supported requests: a validated candidate; explicit colour and spatial checks constrain it. For ambiguous/absent cases: raw candidate must be None. Guard refusals do not count as model-native correctness."
+  },
+  "scope": "Recorded evidence audit, not an independent statistical reliability estimate or a hardware test."
+}
