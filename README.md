@@ -34,8 +34,7 @@ access to reports. The script loads only on `aaronemmanuel.github.io`, so local
 previews do not pollute production traffic. Cloudflare's default SPA measurement
 handles client-side navigation. Do not put account credentials or API keys here.
 
-## Project organization
 
-The project library separates physical builds and testbeds from simulation and robotics software. Industry, academic and independent contexts remain per-project labels. `lib/projects.ts` is the shared catalog for the library and homepage selections. CARDS stays the homepage feature; camera-guided arm sorting is sixth in the full library.
+## Project presentation
 
-The arm case study publishes selected original media, its report and audits. It labels the simulated operating boundary and keeps placement outcomes separate from clarification and cancellation. Robot source archives, pretrained weights and the full local evidence archive are not site assets.
+The homepage and project library preserve the original single-list order: inspection, CARDS, ASL glove, motion planning, Circulr, and arm sorting. Numbering is sequential, and CARDS remains the homepage hero. The arm case study uses original sampled workcell recordings for its main demonstration and interruption examples. Videos use the shared viewport player: muted autoplay on entry, pause offscreen, manual controls, and reduced-motion/data-saving preferences. The original editorial film remains archived with its exact edit manifest; it is not the primary demonstration.
