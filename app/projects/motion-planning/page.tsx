@@ -31,7 +31,7 @@ export default function MotionPlanningPage() {
 
       <section className="facts shell">{facts.map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</section>
       <section className="credits shell"><div><span>Team</span><p>George Mikhaiel · Aaron Emmanuel · Muhammad Saad Farooq Hamirani · Sheik (Farhaan) Elaheebocus</p></div><div><span>Course</span><p>Robot Motion Planning · Professor Jonathan Kelly</p></div></section>
-      <nav className="case-next shell"><Link href="/projects/asl-glove">← Previous project · ASL Glove</Link><Link href="/projects">Project library</Link></nav>
+      <nav className="case-next shell"><Link href="/projects/asl-glove">← Previous project · ASL Glove</Link><Link href="/projects/robot-arm-sorting">Robot arm sorting →</Link></nav>
     </main>
   );
 }
