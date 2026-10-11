@@ -13,4 +13,4 @@ An independent Ubuntu/ROS 2 simulation prototype for controlled component stagin
 
 Historical protocols differ and must not be pooled into a controlled success trend. Original evidence, unsuccessful experiments and operating boundaries are retained in the complete local release.
 
-[Technical report](technical-report.pdf) · [Final cases](final-results.json) · [Final artifact audit](final-verification.json) · [First reserved cases](initial-results.json) · [Film provenance](film-manifest.json)
+[Engineering details](/projects/robot-arm-sorting/#engineering) · [Final cases](final-results.json) · [Final artifact audit](final-verification.json) · [First reserved cases](initial-results.json) · [Film provenance](film-manifest.json)
