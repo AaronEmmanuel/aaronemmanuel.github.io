@@ -38,3 +38,5 @@ handles client-side navigation. Do not put account credentials or API keys here.
 ## Project presentation
 
 The homepage and project library preserve the original single-list order: inspection, CARDS, ASL glove, motion planning, Circulr, and arm sorting. Numbering is sequential, and CARDS remains the homepage hero. The arm case study uses original sampled workcell recordings for its main demonstration and interruption examples. Videos use the shared viewport player: muted autoplay on entry, pause offscreen, manual controls, and reduced-motion/data-saving preferences. The original editorial film remains archived with its exact edit manifest; it is not the primary demonstration.
+
+The arm case study leads with a recorded Ubuntu language workflow and plain-language progression. Detailed architecture and measured limits are expandable on the page. The technical report is retained in the private local project release and removed from public website assets. The new language video is a sampled stepped-mode operator demonstration; continuous evaluation and fresh operator failures are kept distinct.

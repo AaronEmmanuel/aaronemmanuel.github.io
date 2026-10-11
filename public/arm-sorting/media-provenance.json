@@ -1,6 +1,6 @@
 {
   "source": "Completed robot-arm-sorting 1.0.0 local release",
-  "scope": "Portfolio media, report and selected audit records; robot source and pretrained weights are not published.",
+  "scope": "Portfolio media and selected audit records; technical report removed from website. Complete local project release retained.",
   "files": [
     {
       "file": "cancel-while-lifted.mp4",
@@ -14,8 +14,8 @@
     },
     {
       "file": "engineering-story.md",
-      "bytes": 1673,
-      "sha256": "543f46cb2417b5cf1cceb079cd9482ae490cfd06d844ceeb1cada6f7117e482a"
+      "bytes": 1696,
+      "sha256": "65ca3b4276ba4e2088656668a0c3625d02661f8ef94d2ddd112b6fcb9714e533"
     },
     {
       "file": "film-manifest.json",
@@ -63,9 +63,34 @@
       "sha256": "b526917cc5bf08f0febf7a8cffc5286112a24d0f12c6c72cfea72cd0c47415b0"
     },
     {
+      "file": "operator-development-failures.json",
+      "bytes": 1111,
+      "sha256": "e8493dcdbf34ce3e4f74bc56fa5c0eda175c67e964f815c0b9bfa83255a2a342"
+    },
+    {
+      "file": "operator-dialogue.json",
+      "bytes": 5090,
+      "sha256": "d6396ee2fd7a4e8a4e5a18aa2ead01ed39e6e7950cc0732667ca3febf6b8f590"
+    },
+    {
       "file": "operator-holding.jpg",
       "bytes": 111934,
       "sha256": "68d79e2360e2c870bc5002059824ddb1084ffdc04b446cf9edd01e801520bd7b"
+    },
+    {
+      "file": "operator-language-demo.mp4",
+      "bytes": 2414182,
+      "sha256": "a25a97f257814532fbcf588cc60c4d93597b5934fd88a1ad158a68f92d472852"
+    },
+    {
+      "file": "operator-language-poster.jpg",
+      "bytes": 73933,
+      "sha256": "5400821c8d1ef73639e471e18c511f70451eda9dfb788a5e14af1bfaccec3697"
+    },
+    {
+      "file": "operator-recording-manifest.json",
+      "bytes": 64386,
+      "sha256": "1e458477dabe646e07db218262ed2f7b56dac763be879af4222b81a440f8040c"
     },
     {
       "file": "operator-stop.jpg",
@@ -96,11 +121,6 @@
       "file": "screenshot-provenance.json",
       "bytes": 322,
       "sha256": "3f2ff98d74697d7efce3d1636135678daa0106c88dabd470d495fed4c419f945"
-    },
-    {
-      "file": "technical-report.pdf",
-      "bytes": 142186,
-      "sha256": "79398d63a8c5a229faa3fb02bef5b0c4680ade8d8298de92dcb40580b99958f9"
     }
   ]
 }
