@@ -1,6 +1,7 @@
 import { ViewportVideo } from "@/components/viewport-video";
 import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
+import { projects } from "@/lib/projects";
 
 export default function Home() {
   return (
@@ -20,14 +21,10 @@ export default function Home() {
 
       <section className="featured shell">
         <header className="section-head"><div><p className="eyebrow">Selected work</p><h2>Projects built across disciplines.</h2></div><p>Mechanical design, electronics, embedded intelligence, controls, fabrication, and system validation.</p></header>
-        <div className="project-grid four-projects inspection-featured">
-          <ProjectCard number="01" title="Autonomous Inspection with ROS 2 and Unitree Go2" summary="From TurtleBot LiDAR navigation to an SDK-driven quadruped, with learned vision, obstacle response and depth-based object memory." tags={["ROS 2", "Unitree SDK", "Perception"]} href="/projects/autonomous-inspection" media="/inspection/go2-depth-tracking.mp4" poster="/inspection/go2-depth-view.png" still />
-          <ProjectCard number="02" title="Collaborative Autonomous Robot Delivery System" summary="Two modular self-balancing robots developed as a collaborative delivery platform." tags={["Robotics", "Controls", "Electrical"]} href="/projects/cards" media="/cards/v2/cards-robots-together.mp4" poster="/cards/v2/robot-team.png" />
-          <ProjectCard number="03" title="Sensor-Based ASL Recognition Glove" summary="A wearable sensing network that recognized ASL letters and produced visual and spoken output." tags={["Wearables", "Embedded", "Machine learning"]} href="/projects/asl-glove" media="/asl/v2/live-recognition-demo.mp4" poster="/asl/v2/glove-hero.jpg" portrait />
-          <ProjectCard number="04" title="Dynamic Robot Motion Planning" summary="A comparative study of RRT-family replanning using controlled simulation and a live camera-projector workspace." tags={["Motion planning", "Computer vision", "Simulation"]} href="/projects/motion-planning" media="/motion-planning/planner-comparison.mp4" poster="/motion-planning/planner-snapshots.jpg" />
-          <ProjectCard number="05" title="Circulr Reverse Vending Machine" summary="A compact container-return machine taken from concept through build, testing, and grocery-store deployment." tags={["Industry", "Mechatronics", "Product development"]} href="/projects/circulr-rvm" media="/circulr/return-demo.mp4" poster="/circulr/fiesta-farms.jpg" still />
+        <div className="project-grid four-projects curated-projects">
+          {projects.filter(p => ["cards", "circulr", "asl", "inspection"].includes(p.id)).map(p => <ProjectCard key={p.id} {...p} />)}
         </div>
-        <Link className="archive-link" href="/projects"><span>View the complete project library</span><b>05 documented projects ↗</b></Link>
+        <Link className="archive-link" href="/projects"><span>Explore physical builds and simulation projects</span><b>06 documented projects ↗</b></Link>
       </section>
 
       <section className="discipline-band shell">

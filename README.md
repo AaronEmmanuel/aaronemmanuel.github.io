@@ -33,3 +33,9 @@ The public beacon ID in `SiteAnalytics` only submits metrics; it does not grant
 access to reports. The script loads only on `aaronemmanuel.github.io`, so local
 previews do not pollute production traffic. Cloudflare's default SPA measurement
 handles client-side navigation. Do not put account credentials or API keys here.
+
+## Project organization
+
+The project library separates physical builds and testbeds from simulation and robotics software. Industry, academic and independent contexts remain per-project labels. `lib/projects.ts` is the shared catalog for the library and homepage selections. CARDS stays the homepage feature; camera-guided arm sorting is sixth in the full library.
+
+The arm case study publishes selected original media, its report and audits. It labels the simulated operating boundary and keeps placement outcomes separate from clarification and cancellation. Robot source archives, pretrained weights and the full local evidence archive are not site assets.
