@@ -1,7 +1,0 @@
-{
-  "source_video": "runs/ubuntu-final-continuous-reserved-02/pick-followup/episode/demo.mp4",
-  "source_frame": 182,
-  "source_video_sha256": "3b9a7effe88bef062762cdb1ddbcb14dd70cc7622b867bde67ce54a830153db3",
-  "simulation_time": 29.179999999994706,
-  "method": "Exact decoded original video frame; no reconstruction"
-}
